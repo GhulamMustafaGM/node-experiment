@@ -12,7 +12,18 @@ ourApp.get('/', function(req, res) {
     `)
     })
 
+ourApp.post('/answer', function(req, res){
+    res.send("Thanks for submitting the form.")
+})
+
+ourApp.get('/answer', function(req, res){
+    res.send("Are you lost? There is nothing to see here.")
+})
+
+
+
 ourApp.listen(8080)
+
 
 
 
